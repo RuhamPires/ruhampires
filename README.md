@@ -13,7 +13,7 @@
 
 I architect and build **enterprise AI systems** that solve real-world problems at scale. With 10+ years of experience spanning full-stack development, cloud infrastructure, and machine learning, I specialize in turning complex business challenges into elegant, production-ready solutions.
 
-Currently leading AI engineering at **TK Elevator**, where I designed and built SnapSupply from zero to production serving 547 technicians across 12 sites and 3 continents.
+Currently leading AI engineering at **TK Elevator**, where I designed and built SnapSupply from zero to production serving 25.000 technicians.
 
 ---
 
