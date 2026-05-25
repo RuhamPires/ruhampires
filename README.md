@@ -27,7 +27,7 @@ Currently leading AI engineering at **TK Elevator**, where I designed and built 
 | Catalog Size | 228,844 SKUs |
 | Accuracy | 96.4% |
 | Response Time | 1.8s median |
-| Active Users | 547 technicians |
+| Active Users | 25.000 technicians |
 | Regions | Brazil, Europe, US |
 
 **Stack:** Azure OpenAI (GPT-4V) | Azure AI Search | Azure Computer Vision | React | Python | Cosmos DB | Docker | CI/CD
