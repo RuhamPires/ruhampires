@@ -12,24 +12,24 @@
       "name": "Parts Number",
       "group": "edenred",
       "summary": {
-        "en": "",
-        "pt-BR": ""
+        "en": "AI-assisted extraction and standardization of automotive part numbers.",
+        "pt-BR": "Extração e padronização de códigos de peças automotivas com apoio de IA."
       }
     },
     {
       "name": "Parts Recognition",
       "group": "edenred",
       "summary": {
-        "en": "",
-        "pt-BR": ""
+        "en": "Visual validation of automotive parts against submitted photographs.",
+        "pt-BR": "Validação visual de peças automotivas a partir das fotografias enviadas."
       }
     },
     {
       "name": "Smart Odometer",
       "group": "edenred",
       "summary": {
-        "en": "",
-        "pt-BR": ""
+        "en": "Computer vision for extracting vehicle mileage from dashboard photos.",
+        "pt-BR": "Visão computacional para extrair a quilometragem de fotos do painel."
       }
     },
     {
@@ -63,9 +63,10 @@
       "name": "LensPart",
       "group": "lens",
       "summary": {
-        "en": "",
-        "pt-BR": ""
-      }
+        "en": "Visual search for industrial components, with a focus on data sovereignty. As the owner of LensPart, I connect product direction with industrial maintenance needs. The documented platform includes visual identification, catalog deduplication, operational dashboards and deployment options for industrial environments.",
+        "pt-BR": "Busca visual de componentes industriais, com foco em soberania de dados. Como proprietário da LensPart, conecto a direção do produto às necessidades da manutenção industrial. A plataforma documentada inclui identificação visual, deduplicação de catálogos, painéis operacionais e opções de implantação para ambientes industriais."
+      },
+      "url": "https://github.com/RuhamPires/ruhampires/blob/main/docs/projects/lenspart.md"
     },
     {
       "name": "Lens Indústria · Industrial Safety",

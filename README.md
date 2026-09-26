@@ -24,9 +24,15 @@ Previously at **TK Elevator**, I developed SnapSupply from concept to deployment
 
 **Parts Number**
 
+AI-assisted extraction and standardization of automotive part numbers.
+
 **Parts Recognition**
 
+Visual validation of automotive parts against submitted photographs.
+
 **Smart Odometer**
+
+Computer vision for extracting vehicle mileage from dashboard photos.
 
 ### TK Elevator · Industrial applications
 
@@ -44,7 +50,9 @@ Technician dispatch combining route optimization, operational scoring and a mobi
 
 ### Lens · Independent products & demos
 
-**LensPart**
+**[LensPart](https://github.com/RuhamPires/ruhampires/blob/main/docs/projects/lenspart.md)**
+
+Visual search for industrial components, with a focus on data sovereignty. As the owner of LensPart, I connect product direction with industrial maintenance needs. The documented platform includes visual identification, catalog deduplication, operational dashboards and deployment options for industrial environments.
 
 **[Lens Indústria · Industrial Safety](https://lens-industria.ruhampires.chatgpt.site)**
 

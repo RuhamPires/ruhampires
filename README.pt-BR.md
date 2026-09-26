@@ -24,9 +24,15 @@ Anteriormente, na **TK Elevator**, desenvolvi o SnapSupply da concepção à imp
 
 **Parts Number**
 
+Extração e padronização de códigos de peças automotivas com apoio de IA.
+
 **Parts Recognition**
 
+Validação visual de peças automotivas a partir das fotografias enviadas.
+
 **Smart Odometer**
+
+Visão computacional para extrair a quilometragem de fotos do painel.
 
 ### TK Elevator · Aplicações industriais
 
@@ -44,7 +50,9 @@ Despacho de técnicos com otimização de rotas, critérios operacionais e fluxo
 
 ### Lens · Produtos próprios e demos
 
-**LensPart**
+**[LensPart](https://github.com/RuhamPires/ruhampires/blob/main/docs/projects/lenspart.md)**
+
+Busca visual de componentes industriais, com foco em soberania de dados. Como proprietário da LensPart, conecto a direção do produto às necessidades da manutenção industrial. A plataforma documentada inclui identificação visual, deduplicação de catálogos, painéis operacionais e opções de implantação para ambientes industriais.
 
 **[Lens Indústria · Industrial Safety](https://lens-industria.ruhampires.chatgpt.site)**
 
