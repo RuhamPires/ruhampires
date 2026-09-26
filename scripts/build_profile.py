@@ -44,17 +44,27 @@ def hero(locale, copy, theme, mobile=False):
         lines.append(f'<path d="M0 {y}H{width}"/>')
     grid = f'<g stroke="{p["line"]}" stroke-width=".7" opacity=".22">{"".join(lines)}</g>'
     x, y, scale = (555, 190, .68) if mobile else (970, 210, .88)
-    diagram = f'''<g transform="translate({x} {y}) scale({scale})">
-      <circle r="156" fill="none" stroke="{p['line']}" stroke-dasharray="3 10"/>
-      <path d="M-140 0H140M0-140V140" stroke="{p['line']}"/>
-      <path d="m0-110 118 65-118 66-118-66Z" fill="{p['panel']}" stroke="{p['line']}"/>
-      <path d="m0-56 118 65-118 66-118-66Z" fill="{p['soft']}" stroke="{p['accent']}" stroke-opacity=".7"/>
-      <path d="m0-2 118 65-118 66-118-66Z" fill="{p['panel']}" stroke="{p['line']}"/>
-      <path d="M0-55V129M-118 9v54M118 9v54" stroke="{p['accent']}" stroke-opacity=".65"/>
-      <circle cy="9" r="22" fill="{p['bg']}" stroke="{p['accent']}"/>
-      <g transform="translate(-16 -7)">{svg_icon('vision',p['accent'])}</g>
-      <circle cx="118" cy="9" r="4" fill="{p['accent']}"/>
-      <circle cx="-118" cy="63" r="4" fill="{p['accent']}"/>
+    def cube(cx, cy, radius, depth):
+        top = f"{cx},{cy-radius/2} {cx+radius},{cy} {cx},{cy+radius/2} {cx-radius},{cy}"
+        left = f"{cx-radius},{cy} {cx},{cy+radius/2} {cx},{cy+radius/2+depth} {cx-radius},{cy+depth}"
+        right = f"{cx},{cy+radius/2} {cx+radius},{cy} {cx+radius},{cy+depth} {cx},{cy+radius/2+depth}"
+        return f'<polygon points="{left}" fill="url(#side)"/><polygon points="{right}" fill="{p["soft"]}"/><polygon points="{top}" fill="url(#top)"/><g fill="none" stroke="{p["accent"]}" stroke-opacity=".65" stroke-width="1.2"><polygon points="{top}"/><path d="M{cx-radius} {cy}v{depth}l{radius} {radius/2} {radius} {-radius/2}v{-depth}M{cx} {cy+radius/2}v{depth}"/></g>'
+    cubes = cube(0, 40, 134, 22) + cube(0, -5, 104, 25) + cube(0, -67, 59, 75)
+    cubes += cube(-112, -80, 24, 29) + cube(110, -20, 22, 30) + cube(82, 88, 17, 19)
+    diagram = f'''<defs>
+      <linearGradient id="top" x2="1" y2="1"><stop stop-color="{p['accent']}" stop-opacity=".85"/><stop offset="1" stop-color="{p['panel']}"/></linearGradient>
+      <linearGradient id="side" x2="1" y2="1"><stop stop-color="{p['panel']}"/><stop offset="1" stop-color="{p['bg']}"/></linearGradient>
+      <radialGradient id="halo"><stop stop-color="{p['accent']}" stop-opacity=".18"/><stop offset="1" stop-color="{p['bg']}" stop-opacity="0"/></radialGradient>
+      </defs><g transform="translate({x} {y}) scale({scale})">
+      <circle r="195" fill="url(#halo)"/>
+      <ellipse cy="117" rx="154" ry="33" fill="{p['bg']}" opacity=".6"/>
+      <ellipse rx="180" ry="76" fill="none" stroke="{p['line']}" transform="rotate(-28)"/>
+      <ellipse rx="179" ry="76" fill="none" stroke="{p['accent']}" stroke-opacity=".35" stroke-dasharray="3 9" transform="rotate(28)"/>
+      {cubes}
+      <path d="M-112-50v26l53 27M110 10v21l-46 25" fill="none" stroke="{p['accent']}" stroke-width="2"/>
+      <g transform="translate(-16 -92)">{svg_icon('model',p['text'])}</g>
+      <circle cx="-166" cy="-53" r="5" fill="{p['accent']}"/>
+      <circle cx="163" cy="61" r="4" fill="{p['accent']}"/>
     </g>'''
     if mobile:
         title = f'<text x="38" y="168" font-size="62" font-weight="700">{esc(copy["mobile_hero"][0])}</text><text x="38" y="240" font-size="62" font-weight="700">{esc(copy["mobile_hero"][1])}</text><text x="40" y="303" font-size="27" fill="{p["accent"]}">{esc(copy["hero"][1])}</text>'
@@ -68,7 +78,7 @@ def hero(locale, copy, theme, mobile=False):
         footer = f'<text x="52" y="{footer_y}" font-family="monospace" font-size="14" letter-spacing="1.6" fill="{p["muted"]}">{esc(copy["hero_footer"])}</text><text x="1128" y="367" text-anchor="end" font-family="monospace" font-size="12" fill="{p["muted"]}">VISION / MODELS / SYSTEMS</text>'
         rule = f'<path d="M52 324H1148" stroke="{p["line"]}"/>'
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">
-<title id="title">Ruham Pires — {esc(copy['position'])}</title><desc id="desc">{esc(' '.join(copy['hero']))} Original geometric illustration of layered visual information.</desc>
+<title id="title">Ruham Pires — {esc(copy['position'])}</title><desc id="desc">{esc(' '.join(copy['hero']))} Original isometric 3D illustration of an AI computing core and connected systems.</desc>
 <rect width="{width}" height="{height}" rx="16" fill="{p['bg']}"/>{grid}{diagram}<g font-family="Arial, Helvetica, sans-serif" fill="{p['text']}"><text x="{40 if mobile else 52}" y="{eyebrow_y}" font-size="{20 if mobile else 17}" letter-spacing="3" fill="{p['muted']}">RUHAM PIRES / DATA &amp; AI</text>{title}{footer}</g>{rule}
 <rect x=".5" y=".5" width="{width-1}" height="{height-1}" rx="16" fill="none" stroke="{p['line']}"/></svg>\n'''
 
@@ -117,6 +127,10 @@ def markdown(data, locale):
     for i, label in enumerate(c['stack']):
         out += [f'<picture><source media="(prefers-color-scheme: dark)" srcset="assets/badge-{locale}-{i}-dark.svg"><img src="assets/badge-{locale}-{i}-light.svg" height="36" alt="{esc(label)}"></picture>']
     out += ['</p>', '', ' · '.join(c['stack']), '']
+    out += [c['stack_context'], '', f'### {c["technology_title"]}', '', f'| {c["category_label"]} | {c["technology_label"]} |', '| --- | --- |']
+    for category, technologies in c['technology_groups']:
+        out += [f'| {category} | {technologies} |']
+    out += ['']
     out += [f'## {c["notes_title"]}', '', c['notes_intro'], '']
     for n in c['notes']:
         out += [f'### <img src="assets/icons/{n["icon"]}.svg" width="22" height="22" alt=""> {n["title"]}', '', f'`{n["label"]}`', '', n['text'], '', f'[{n["cta"]} →]({n["path"]})', '']

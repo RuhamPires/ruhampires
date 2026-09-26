@@ -76,20 +76,31 @@ Connecting images, context and model outputs to operational needs. Making evalua
 
 Aligning technical and business teams around requirements, UAT, application integration, documentation and environment promotion.
 
-**Tools across my work**
+**Languages used across my projects**
 
 <p>
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/badge-en-0-dark.svg"><img src="assets/badge-en-0-light.svg" height="36" alt="Python"></picture>
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/badge-en-1-dark.svg"><img src="assets/badge-en-1-light.svg" height="36" alt="Azure AI"></picture>
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/badge-en-2-dark.svg"><img src="assets/badge-en-2-light.svg" height="36" alt="FastAPI"></picture>
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/badge-en-3-dark.svg"><img src="assets/badge-en-3-light.svg" height="36" alt="React"></picture>
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/badge-en-4-dark.svg"><img src="assets/badge-en-4-light.svg" height="36" alt="Docker"></picture>
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/badge-en-5-dark.svg"><img src="assets/badge-en-5-light.svg" height="36" alt="Databricks"></picture>
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/badge-en-6-dark.svg"><img src="assets/badge-en-6-light.svg" height="36" alt="Azure DevOps"></picture>
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/badge-en-7-dark.svg"><img src="assets/badge-en-7-light.svg" height="36" alt="Vector search"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/badge-en-1-dark.svg"><img src="assets/badge-en-1-light.svg" height="36" alt="JavaScript"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/badge-en-2-dark.svg"><img src="assets/badge-en-2-light.svg" height="36" alt="TypeScript"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/badge-en-3-dark.svg"><img src="assets/badge-en-3-light.svg" height="36" alt="SQL"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/badge-en-4-dark.svg"><img src="assets/badge-en-4-light.svg" height="36" alt="Bash"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/badge-en-5-dark.svg"><img src="assets/badge-en-5-light.svg" height="36" alt="PowerShell"></picture>
 </p>
 
-Python · Azure AI · FastAPI · React · Docker · Databricks · Azure DevOps · Vector search
+Python · JavaScript · TypeScript · SQL · Bash · PowerShell
+
+HTML5 and CSS3 support the interface layer. Bash and PowerShell appear in automation and deployment scripts.
+
+### Technology by area
+
+| Area | Technologies |
+| --- | --- |
+| AI & computer vision | PyTorch · OpenCLIP · DINOv2 · Multimodal models |
+| APIs & backend | FastAPI · Flask |
+| Frontend | React · HTML5 · CSS3 · Tailwind CSS · PWA |
+| Data & search | FAISS · Azure AI Search · PostgreSQL · SQLite · Cosmos DB |
+| Cloud & platform | Azure OpenAI · Azure Blob Storage · Databricks |
+| Delivery & version control | Docker · Git · GitHub Actions · Azure DevOps |
 
 ## Engineering notes
 

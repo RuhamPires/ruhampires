@@ -131,16 +131,14 @@
           "text": "Aligning technical and business teams around requirements, UAT, application integration, documentation and environment promotion."
         }
       ],
-      "stack_title": "Tools across my work",
+      "stack_title": "Languages used across my projects",
       "stack": [
         "Python",
-        "Azure AI",
-        "FastAPI",
-        "React",
-        "Docker",
-        "Databricks",
-        "Azure DevOps",
-        "Vector search"
+        "JavaScript",
+        "TypeScript",
+        "SQL",
+        "Bash",
+        "PowerShell"
       ],
       "notes_title": "Engineering notes",
       "notes_intro": "A small collection of independent reference material, including a runnable evaluation demo. These examples illustrate engineering concepts using synthetic scenarios.",
@@ -197,13 +195,41 @@
       "projects_title": "Professional work",
       "stack_icons": [
         "model",
-        "model",
         "delivery",
         "branch",
-        "delivery",
         "data",
         "branch",
-        "vision"
+        "delivery"
+      ],
+      "stack_context": "HTML5 and CSS3 support the interface layer. Bash and PowerShell appear in automation and deployment scripts.",
+      "technology_title": "Technology by area",
+      "category_label": "Area",
+      "technology_label": "Technologies",
+      "technology_groups": [
+        [
+          "AI & computer vision",
+          "PyTorch · OpenCLIP · DINOv2 · Multimodal models"
+        ],
+        [
+          "APIs & backend",
+          "FastAPI · Flask"
+        ],
+        [
+          "Frontend",
+          "React · HTML5 · CSS3 · Tailwind CSS · PWA"
+        ],
+        [
+          "Data & search",
+          "FAISS · Azure AI Search · PostgreSQL · SQLite · Cosmos DB"
+        ],
+        [
+          "Cloud & platform",
+          "Azure OpenAI · Azure Blob Storage · Databricks"
+        ],
+        [
+          "Delivery & version control",
+          "Docker · Git · GitHub Actions · Azure DevOps"
+        ]
       ]
     },
     "pt-BR": {
@@ -249,16 +275,14 @@
           "text": "Alinhamento entre times técnicos e de negócio sobre requisitos, UAT, integração de aplicações, documentação e promoção entre ambientes."
         }
       ],
-      "stack_title": "Tecnologias presentes no meu trabalho",
+      "stack_title": "Linguagens usadas nos meus projetos",
       "stack": [
         "Python",
-        "Azure AI",
-        "FastAPI",
-        "React",
-        "Docker",
-        "Databricks",
-        "Azure DevOps",
-        "Busca vetorial"
+        "JavaScript",
+        "TypeScript",
+        "SQL",
+        "Bash",
+        "PowerShell"
       ],
       "notes_title": "Notas técnicas",
       "notes_intro": "Uma pequena coleção de materiais de referência independentes, incluindo uma demonstração executável de avaliação. Os exemplos ilustram conceitos de engenharia com cenários sintéticos. A documentação técnica está em inglês.",
@@ -315,13 +339,41 @@
       "projects_title": "Projetos profissionais",
       "stack_icons": [
         "model",
-        "model",
         "delivery",
         "branch",
-        "delivery",
         "data",
         "branch",
-        "vision"
+        "delivery"
+      ],
+      "stack_context": "HTML5 e CSS3 complementam o desenvolvimento das interfaces. Bash e PowerShell aparecem em scripts de automação e implantação.",
+      "technology_title": "Tecnologias por área",
+      "category_label": "Área",
+      "technology_label": "Tecnologias",
+      "technology_groups": [
+        [
+          "IA e visão computacional",
+          "PyTorch · OpenCLIP · DINOv2 · Multimodal models"
+        ],
+        [
+          "APIs e backend",
+          "FastAPI · Flask"
+        ],
+        [
+          "Interfaces",
+          "React · HTML5 · CSS3 · Tailwind CSS · PWA"
+        ],
+        [
+          "Dados e busca",
+          "FAISS · Azure AI Search · PostgreSQL · SQLite · Cosmos DB"
+        ],
+        [
+          "Cloud e plataforma",
+          "Azure OpenAI · Azure Blob Storage · Databricks"
+        ],
+        [
+          "Entrega e versionamento",
+          "Docker · Git · GitHub Actions · Azure DevOps"
+        ]
       ]
     }
   },
