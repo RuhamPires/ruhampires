@@ -1,0 +1,274 @@
+{
+  "name": "Ruham Pires",
+  "github_username": "RuhamPires",
+  "contact": [
+    {
+      "label": "LinkedIn",
+      "url": "https://linkedin.com/in/ruhampires"
+    }
+  ],
+  "selected_projects": [
+    {
+      "name": "SnapSupply · AI Part Identification",
+      "url": "https://github.com/RuhamPires/ruhampires/blob/main/docs/projects/snapsupply.md",
+      "summary": {
+        "en": "Computer vision and hybrid search for industrial spare parts. Developed end to end at TK Elevator, with a documented rollout across **12 sites, 3 continents and 5 languages**.",
+        "pt-BR": "Visão computacional e busca híbrida para peças industriais. Desenvolvimento de ponta a ponta na TK Elevator, com implantação documentada em **12 unidades, 3 continentes e 5 idiomas**."
+      }
+    },
+    {
+      "name": "SnapClean · Material Data Quality",
+      "url": "https://github.com/RuhamPires/ruhampires/blob/main/docs/projects/snapclean.md",
+      "summary": {
+        "en": "Multilingual matching and human-in-the-loop validation for duplicate, incomplete and inconsistent SAP material records.",
+        "pt-BR": "Matching multilíngue e validação humana para materiais SAP duplicados, incompletos ou inconsistentes."
+      }
+    },
+    {
+      "name": "SnapDispatch · Field Operations",
+      "url": "https://github.com/RuhamPires/ruhampires/blob/main/docs/projects/snapdispatch.md",
+      "summary": {
+        "en": "Technician dispatch combining route optimization, operational scoring and a mobile field workflow.",
+        "pt-BR": "Despacho de técnicos com otimização de rotas, critérios operacionais e fluxo de trabalho móvel em campo."
+      }
+    }
+  ],
+  "locales": {
+    "en": {
+      "position": "Applied AI Engineer · Computer Vision · GenAI",
+      "hero": [
+        "Applied intelligence.",
+        "Operational perspective."
+      ],
+      "mobile_hero": [
+        "Applied",
+        "intelligence."
+      ],
+      "hero_footer": "DATA & AI / EDENRED / BRAZIL",
+      "navigation": [
+        "Professional work",
+        "Focus",
+        "Approach",
+        "Connect"
+      ],
+      "nav_anchors": [
+        "professional-work",
+        "focus",
+        "approach",
+        "connect"
+      ],
+      "intro": "I work in Data & AI at **Edenred**, with responsibilities in technical leadership and the coordination of applied AI initiatives. My work connects computer vision, multimodal models and the integration of AI capabilities into business applications.",
+      "intro2": "Previously at **TK Elevator**, I developed SnapSupply from concept to deployment. My background in **industrial maintenance, production and automation** shapes how I approach AI: understand the process, define the decision and make the system useful in the field.",
+      "focus_title": "Focus",
+      "areas": [
+        {
+          "icon": "vision",
+          "title": "Computer vision",
+          "text": "Image-to-description validation and visual recognition, with attention to image quality, difficult examples and the limits of automated decisions."
+        },
+        {
+          "icon": "model",
+          "title": "Multimodal AI",
+          "text": "Connecting images, context and model outputs to operational needs. Making evaluation criteria and integration dependencies explicit."
+        },
+        {
+          "icon": "delivery",
+          "title": "Technical delivery",
+          "text": "Aligning technical and business teams around requirements, UAT, application integration, documentation and environment promotion."
+        }
+      ],
+      "stack_title": "Tools across my work",
+      "stack": [
+        "Python",
+        "Azure AI",
+        "FastAPI",
+        "React",
+        "Docker",
+        "Databricks",
+        "Azure DevOps",
+        "Vector search"
+      ],
+      "notes_title": "Engineering notes",
+      "notes_intro": "A small collection of independent reference material, including a runnable evaluation demo. These examples illustrate engineering concepts using synthetic scenarios.",
+      "notes": [
+        {
+          "icon": "evaluation",
+          "title": "Evaluation lab",
+          "label": "RUNNABLE DEMO",
+          "text": "Measure accepted-decision quality, coverage and human-review rate together. Includes a zero-dependency evaluator, synthetic fixtures and tests.",
+          "path": "examples/evaluation-lab/README.md",
+          "cta": "Explore the lab"
+        },
+        {
+          "icon": "vision",
+          "title": "Visual validation",
+          "label": "REFERENCE DESIGN",
+          "text": "A compact design note on inputs, decision thresholds, difficult examples and the boundary between an automated decision and human review.",
+          "path": "docs/visual-validation.md",
+          "cta": "Read the design note"
+        },
+        {
+          "icon": "delivery",
+          "title": "From validation to integration",
+          "label": "DELIVERY NOTE",
+          "text": "A practical outline for acceptance criteria, environment promotion, application integration and meaningful operational monitoring.",
+          "path": "docs/ai-delivery.md",
+          "cta": "Read the delivery note"
+        }
+      ],
+      "approach_title": "Approach",
+      "principles": [
+        [
+          "Start with the process.",
+          "Define the operational decision and the people who depend on it."
+        ],
+        [
+          "Evaluate difficult cases.",
+          "Consider variation in image quality, context and real usage conditions."
+        ],
+        [
+          "Make trade-offs explicit.",
+          "Discuss quality, latency, cost and the need for human review together."
+        ],
+        [
+          "Document the decision.",
+          "Keep assumptions, dependencies and acceptance criteria understandable to the team."
+        ]
+      ],
+      "background_title": "Background",
+      "background": "I started building for the web before specializing in AI. My background spans industrial maintenance, solar energy projects, production and automation, followed by postgraduate training in **Data Science & AI (2025)**. Today I bring those operational and software perspectives to enterprise AI delivery.",
+      "closing": "I am interested in the practical questions that make AI useful: what should the system decide, how do we know it works, and how does it fit into the operation?",
+      "footer": "Applied AI · Operational understanding · Technical delivery",
+      "contact_title": "Connect",
+      "projects_title": "Professional work",
+      "stack_icons": [
+        "model",
+        "model",
+        "delivery",
+        "branch",
+        "delivery",
+        "data",
+        "branch",
+        "vision"
+      ]
+    },
+    "pt-BR": {
+      "position": "Engenharia de IA Aplicada · Visão Computacional · GenAI",
+      "hero": [
+        "Inteligência aplicada.",
+        "Perspectiva operacional."
+      ],
+      "mobile_hero": [
+        "Inteligência",
+        "aplicada."
+      ],
+      "hero_footer": "DATA & AI / EDENRED / BRASIL",
+      "navigation": [
+        "Projetos profissionais",
+        "Foco",
+        "Abordagem",
+        "Contato"
+      ],
+      "nav_anchors": [
+        "projetos-profissionais",
+        "foco",
+        "abordagem",
+        "contato"
+      ],
+      "intro": "Atuo em Data & AI na **Edenred**, com responsabilidades de liderança técnica e articulação de iniciativas de IA aplicada. Meu trabalho conecta visão computacional, modelos multimodais e a integração de recursos de IA em aplicações de negócio.",
+      "intro2": "Anteriormente, na **TK Elevator**, desenvolvi o SnapSupply da concepção à implantação. Minha trajetória em **manutenção industrial, produção e automação** orienta minha abordagem de IA: compreender o processo, definir a decisão e tornar o sistema útil em campo.",
+      "focus_title": "Foco",
+      "areas": [
+        {
+          "icon": "vision",
+          "title": "Visão computacional",
+          "text": "Validação da correspondência entre imagem e descrição e reconhecimento visual, considerando qualidade, casos difíceis e limites das decisões automáticas."
+        },
+        {
+          "icon": "model",
+          "title": "IA multimodal",
+          "text": "Conexão entre imagens, contexto e respostas dos modelos para apoiar necessidades operacionais. Critérios de avaliação e dependências de integração explícitos."
+        },
+        {
+          "icon": "delivery",
+          "title": "Entrega técnica",
+          "text": "Alinhamento entre times técnicos e de negócio sobre requisitos, UAT, integração de aplicações, documentação e promoção entre ambientes."
+        }
+      ],
+      "stack_title": "Tecnologias presentes no meu trabalho",
+      "stack": [
+        "Python",
+        "Azure AI",
+        "FastAPI",
+        "React",
+        "Docker",
+        "Databricks",
+        "Azure DevOps",
+        "Busca vetorial"
+      ],
+      "notes_title": "Notas técnicas",
+      "notes_intro": "Uma pequena coleção de materiais de referência independentes, incluindo uma demonstração executável de avaliação. Os exemplos ilustram conceitos de engenharia com cenários sintéticos. A documentação técnica está em inglês.",
+      "notes": [
+        {
+          "icon": "evaluation",
+          "title": "Laboratório de avaliação",
+          "label": "DEMO EXECUTÁVEL",
+          "text": "Avaliação conjunta da qualidade das decisões aceitas, cobertura e taxa de revisão humana. Inclui avaliador sem dependências, dados sintéticos e testes.",
+          "path": "examples/evaluation-lab/README.md",
+          "cta": "Explorar o laboratório"
+        },
+        {
+          "icon": "vision",
+          "title": "Validação visual",
+          "label": "DESIGN DE REFERÊNCIA",
+          "text": "Uma nota sobre entradas, critérios de decisão, casos difíceis e a fronteira entre a decisão automática e a revisão humana.",
+          "path": "docs/visual-validation.md",
+          "cta": "Ler a nota de design"
+        },
+        {
+          "icon": "delivery",
+          "title": "Da validação à integração",
+          "label": "NOTA SOBRE ENTREGA",
+          "text": "Uma estrutura prática para critérios de aceite, promoção entre ambientes, integração com aplicações e monitoramento operacional.",
+          "path": "docs/ai-delivery.md",
+          "cta": "Ler a nota sobre entrega"
+        }
+      ],
+      "approach_title": "Abordagem",
+      "principles": [
+        [
+          "Começar pelo processo.",
+          "Definir a decisão operacional e as pessoas que dependem dela."
+        ],
+        [
+          "Avaliar os casos difíceis.",
+          "Considerar variações de qualidade das imagens, contexto e condições reais de uso."
+        ],
+        [
+          "Explicitar as escolhas.",
+          "Discutir qualidade, latência, custo e necessidade de revisão humana em conjunto."
+        ],
+        [
+          "Documentar a decisão.",
+          "Manter premissas, dependências e critérios de aceite compreensíveis para o time."
+        ]
+      ],
+      "background_title": "Trajetória",
+      "background": "Comecei desenvolvendo para a web antes de me especializar em IA. Minha trajetória passa por manutenção industrial, projetos de energia solar, produção e automação, seguida pela pós-graduação em **Data Science & IA (2025)**. Hoje conecto essa experiência operacional e de software à entrega de IA corporativa.",
+      "closing": "Meu interesse está nas perguntas práticas que tornam a IA útil: o que o sistema precisa decidir, como sabemos que funciona e como ele se encaixa na operação?",
+      "footer": "IA aplicada · Conhecimento operacional · Entrega técnica",
+      "contact_title": "Contato",
+      "projects_title": "Projetos profissionais",
+      "stack_icons": [
+        "model",
+        "model",
+        "delivery",
+        "branch",
+        "delivery",
+        "data",
+        "branch",
+        "vision"
+      ]
+    }
+  }
+}

@@ -1,0 +1,13 @@
+id,truth,decision,latency_ms
+synthetic-01,match,match,110
+synthetic-02,match,match,120
+synthetic-03,mismatch,mismatch,90
+synthetic-04,mismatch,match,145
+synthetic-05,match,mismatch,180
+synthetic-06,match,review,100
+synthetic-07,mismatch,review,105
+synthetic-08,match,match,125
+synthetic-09,mismatch,mismatch,95
+synthetic-10,mismatch,mismatch,135
+synthetic-11,match,review,160
+synthetic-12,mismatch,mismatch,115
