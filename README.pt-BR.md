@@ -20,17 +20,39 @@ Anteriormente, na **TK Elevator**, desenvolvi o SnapSupply da concepção à imp
 
 ## Projetos profissionais
 
-### [SnapSupply · AI Part Identification](https://github.com/RuhamPires/ruhampires/blob/main/docs/projects/snapsupply.md)
+### Edenred · Dados e IA
+
+**Parts Number**
+
+**Parts Recognition**
+
+**Smart Odometer**
+
+### TK Elevator · Aplicações industriais
+
+**[SnapSupply · AI Part Identification](https://github.com/RuhamPires/ruhampires/blob/main/docs/projects/snapsupply.md)**
 
 Visão computacional e busca híbrida para peças industriais. Desenvolvimento de ponta a ponta na TK Elevator, com implantação documentada em **12 unidades, 3 continentes e 5 idiomas**.
 
-### [SnapClean · Material Data Quality](https://github.com/RuhamPires/ruhampires/blob/main/docs/projects/snapclean.md)
+**[SnapClean · Material Data Quality](https://github.com/RuhamPires/ruhampires/blob/main/docs/projects/snapclean.md)**
 
 Matching multilíngue e validação humana para materiais SAP duplicados, incompletos ou inconsistentes.
 
-### [SnapDispatch · Field Operations](https://github.com/RuhamPires/ruhampires/blob/main/docs/projects/snapdispatch.md)
+**[SnapDispatch · Field Operations](https://github.com/RuhamPires/ruhampires/blob/main/docs/projects/snapdispatch.md)**
 
 Despacho de técnicos com otimização de rotas, critérios operacionais e fluxo de trabalho móvel em campo.
+
+### Lens · Produtos próprios e demos
+
+**LensPart**
+
+**[Lens Indústria · Industrial Safety](https://lens-industria.ruhampires.chatgpt.site)**
+
+Demonstração de fábrica 3D interativa que explora visão computacional e identificação de EPIs para segurança industrial.
+
+**[Lens JiuJitsu · Sports Video Analysis](https://lens-jiujitsu.ruhampires.chatgpt.site)**
+
+Tatame 3D interativo e análise de vídeos de Jiu-Jitsu com posições, linha do tempo e apoio à revisão de pontuação.
 
 ## Foco
 

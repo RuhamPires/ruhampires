@@ -9,12 +9,37 @@
   ],
   "selected_projects": [
     {
+      "name": "Parts Number",
+      "group": "edenred",
+      "summary": {
+        "en": "",
+        "pt-BR": ""
+      }
+    },
+    {
+      "name": "Parts Recognition",
+      "group": "edenred",
+      "summary": {
+        "en": "",
+        "pt-BR": ""
+      }
+    },
+    {
+      "name": "Smart Odometer",
+      "group": "edenred",
+      "summary": {
+        "en": "",
+        "pt-BR": ""
+      }
+    },
+    {
       "name": "SnapSupply · AI Part Identification",
       "url": "https://github.com/RuhamPires/ruhampires/blob/main/docs/projects/snapsupply.md",
       "summary": {
         "en": "Computer vision and hybrid search for industrial spare parts. Developed end to end at TK Elevator, with a documented rollout across **12 sites, 3 continents and 5 languages**.",
         "pt-BR": "Visão computacional e busca híbrida para peças industriais. Desenvolvimento de ponta a ponta na TK Elevator, com implantação documentada em **12 unidades, 3 continentes e 5 idiomas**."
-      }
+      },
+      "group": "tke"
     },
     {
       "name": "SnapClean · Material Data Quality",
@@ -22,7 +47,8 @@
       "summary": {
         "en": "Multilingual matching and human-in-the-loop validation for duplicate, incomplete and inconsistent SAP material records.",
         "pt-BR": "Matching multilíngue e validação humana para materiais SAP duplicados, incompletos ou inconsistentes."
-      }
+      },
+      "group": "tke"
     },
     {
       "name": "SnapDispatch · Field Operations",
@@ -30,6 +56,33 @@
       "summary": {
         "en": "Technician dispatch combining route optimization, operational scoring and a mobile field workflow.",
         "pt-BR": "Despacho de técnicos com otimização de rotas, critérios operacionais e fluxo de trabalho móvel em campo."
+      },
+      "group": "tke"
+    },
+    {
+      "name": "LensPart",
+      "group": "lens",
+      "summary": {
+        "en": "",
+        "pt-BR": ""
+      }
+    },
+    {
+      "name": "Lens Indústria · Industrial Safety",
+      "url": "https://lens-industria.ruhampires.chatgpt.site",
+      "group": "lens",
+      "summary": {
+        "en": "Interactive 3D factory demonstration exploring computer vision and PPE identification for industrial safety.",
+        "pt-BR": "Demonstração de fábrica 3D interativa que explora visão computacional e identificação de EPIs para segurança industrial."
+      }
+    },
+    {
+      "name": "Lens JiuJitsu · Sports Video Analysis",
+      "url": "https://lens-jiujitsu.ruhampires.chatgpt.site",
+      "group": "lens",
+      "summary": {
+        "en": "Interactive 3D mat and Jiu-Jitsu video analysis with positions, a timeline and support for reviewing scoring.",
+        "pt-BR": "Tatame 3D interativo e análise de vídeos de Jiu-Jitsu com posições, linha do tempo e apoio à revisão de pontuação."
       }
     }
   ],
@@ -269,6 +322,20 @@
         "branch",
         "vision"
       ]
+    }
+  },
+  "project_groups": {
+    "edenred": {
+      "en": "Edenred · Data & AI",
+      "pt-BR": "Edenred · Dados e IA"
+    },
+    "tke": {
+      "en": "TK Elevator · Industrial applications",
+      "pt-BR": "TK Elevator · Aplicações industriais"
+    },
+    "lens": {
+      "en": "Lens · Independent products & demos",
+      "pt-BR": "Lens · Produtos próprios e demos"
     }
   }
 }
