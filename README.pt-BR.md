@@ -3,78 +3,93 @@
   <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/hero-pt-BR-dark-mobile.svg">
   <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/hero-pt-BR-light-mobile.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/hero-pt-BR-dark.svg">
-  <img src="assets/hero-pt-BR-light.svg" alt="Inteligência aplicada. Perspectiva operacional." width="1200">
+  <img src="assets/hero-pt-BR-light.svg" alt="Dos pixels. À decisão." width="1200">
 </picture>
 
 # Ruham Pires
 
-**Engenharia de IA Aplicada · Visão Computacional · GenAI**
+**Engenheiro de Visão Computacional e IA Multimodal**
+
+Reconhecimento visual · Busca por similaridade · IA aplicada à operação
 
 [English](README.md) · Português
 
-<p><a href="#projetos-profissionais">Projetos profissionais</a> &nbsp; / &nbsp; <a href="#foco">Foco</a> &nbsp; / &nbsp; <a href="#abordagem">Abordagem</a> &nbsp; / &nbsp; <a href="#contato">Contato</a></p>
+<p><a href="#destaques">Destaques</a> &nbsp; / &nbsp; <a href="#portfólio">Portfólio</a> &nbsp; / &nbsp; <a href="#engenharia">Engenharia</a> &nbsp; / &nbsp; <a href="#tecnologias">Tecnologias</a> &nbsp; / &nbsp; <a href="#contato">Contato</a></p>
 
-Atuo em Data & AI na **Edenred**, com responsabilidades de liderança técnica e articulação de iniciativas de IA aplicada. Meu trabalho conecta visão computacional, modelos multimodais e a integração de recursos de IA em aplicações de negócio.
+Atuo em **Data & AI na Edenred**, com responsabilidades de liderança técnica em IA aplicada, e sou **proprietário da LensPart**. Minha especialidade conecta imagens, representações visuais e aplicações que apoiam decisões operacionais.
 
-Anteriormente, na **TK Elevator**, desenvolvi o SnapSupply da concepção à implantação. Minha trajetória em **manutenção industrial, produção e automação** orienta minha abordagem de IA: compreender o processo, definir a decisão e tornar o sistema útil em campo.
+Na **TK Elevator**, desenvolvi o **SnapSupply da concepção à implantação**. Minha experiência anterior em manutenção industrial, produção e automação me ajuda a conectar a engenharia de IA às condições reais de uso.
 
-## Projetos profissionais
+## Destaques
+
+| Escala do catálogo | Alcance operacional | Experiência multilíngue |
+| --- | --- | --- |
+| **228.844 SKUs SAP** | **12 unidades · 3 continentes** | **5 idiomas** |
+
+Escopo do SnapSupply registrado anteriormente no perfil público. [Contexto, contribuição e limites da evidência →](docs/projects/snapsupply.md)
+
+| Trabalho em destaque | O que examinar |
+| --- | --- |
+| [SnapSupply](docs/projects/snapsupply.md) | Da imagem de campo à busca no catálogo; desenvolvimento de ponta a ponta e implantação industrial. |
+| [LensPart](docs/projects/lenspart.md) | Produto próprio de busca visual, qualidade de catálogo e implantação com controle dos dados. |
+| [Evaluation lab](examples/evaluation-lab/README.md) | Avaliador Python executável: qualidade, cobertura e revisão humana, com testes e dados sintéticos. |
+
+## Portfólio
+
 
 ### Edenred · Dados e IA
 
-**Parts Number**
-
-Extração e padronização de códigos de peças automotivas com apoio de IA.
-
-**Parts Recognition**
-
-Validação visual de peças automotivas a partir das fotografias enviadas.
-
-**Smart Odometer**
-
-Visão computacional para extrair a quilometragem de fotos do painel.
+| Projeto | Aplicação |
+| --- | --- |
+| **Parts Number** | Extração e padronização de códigos de peças automotivas com apoio de IA. |
+| **Parts Recognition** | Validação visual de peças automotivas a partir das fotografias enviadas. |
+| **Smart Odometer** | Visão computacional para extrair a quilometragem de fotos do painel. |
 
 ### TK Elevator · Aplicações industriais
 
-**[SnapSupply · AI Part Identification](https://github.com/RuhamPires/ruhampires/blob/main/docs/projects/snapsupply.md)**
-
-Visão computacional e busca híbrida para peças industriais. Desenvolvimento de ponta a ponta na TK Elevator, com implantação documentada em **12 unidades, 3 continentes e 5 idiomas**.
-
-**[SnapClean · Material Data Quality](https://github.com/RuhamPires/ruhampires/blob/main/docs/projects/snapclean.md)**
-
-Matching multilíngue e validação humana para materiais SAP duplicados, incompletos ou inconsistentes.
-
-**[SnapDispatch · Field Operations](https://github.com/RuhamPires/ruhampires/blob/main/docs/projects/snapdispatch.md)**
-
-Despacho de técnicos com otimização de rotas, critérios operacionais e fluxo de trabalho móvel em campo.
+| Projeto | Aplicação |
+| --- | --- |
+| **[SnapSupply · AI Part Identification](https://github.com/RuhamPires/ruhampires/blob/main/docs/projects/snapsupply.md)** | Visão computacional e busca híbrida para peças industriais. Desenvolvimento de ponta a ponta na TK Elevator, com implantação documentada em **12 unidades, 3 continentes e 5 idiomas**. |
+| **[SnapClean · Material Data Quality](https://github.com/RuhamPires/ruhampires/blob/main/docs/projects/snapclean.md)** | Matching multilíngue e validação humana para materiais SAP duplicados, incompletos ou inconsistentes. |
+| **[SnapDispatch · Field Operations](https://github.com/RuhamPires/ruhampires/blob/main/docs/projects/snapdispatch.md)** | Despacho de técnicos com otimização de rotas, critérios operacionais e fluxo de trabalho móvel em campo. |
 
 ### Lens · Produtos próprios e demos
 
-**[LensPart](https://github.com/RuhamPires/ruhampires/blob/main/docs/projects/lenspart.md)**
+| Projeto | Aplicação |
+| --- | --- |
+| **[LensPart](https://github.com/RuhamPires/ruhampires/blob/main/docs/projects/lenspart.md)** | Busca visual industrial, qualidade de catálogo e soberania de dados. Produto próprio. |
+| **[Lens Indústria · Industrial Safety](https://lens-industria.ruhampires.chatgpt.site)** | Demonstração de fábrica 3D interativa que explora visão computacional e identificação de EPIs para segurança industrial. |
+| **[Lens JiuJitsu · Sports Video Analysis](https://lens-jiujitsu.ruhampires.chatgpt.site)** | Tatame 3D interativo e análise de vídeos de Jiu-Jitsu com posições, linha do tempo e apoio à revisão de pontuação. |
 
-Busca visual de componentes industriais, com foco em soberania de dados. Como proprietário da LensPart, conecto a direção do produto às necessidades da manutenção industrial. A plataforma documentada inclui identificação visual, deduplicação de catálogos, painéis operacionais e opções de implantação para ambientes industriais.
+## Engenharia
 
-**[Lens Indústria · Industrial Safety](https://lens-industria.ruhampires.chatgpt.site)**
+Materiais independentes para inspecionar a abordagem técnica. A demo usa dados sintéticos; as notas são referências de engenharia.
 
-Demonstração de fábrica 3D interativa que explora visão computacional e identificação de EPIs para segurança industrial.
+[Guia de revisão técnica de visão computacional →](docs/computer-vision-review.md)
 
-**[Lens JiuJitsu · Sports Video Analysis](https://lens-jiujitsu.ruhampires.chatgpt.site)**
+**[Laboratório de avaliação](examples/evaluation-lab/README.md)** · `DEMO EXECUTÁVEL`
 
-Tatame 3D interativo e análise de vídeos de Jiu-Jitsu com posições, linha do tempo e apoio à revisão de pontuação.
+Avaliação conjunta da qualidade das decisões aceitas, cobertura e taxa de revisão humana. Inclui avaliador sem dependências, dados sintéticos e testes.
 
-## Foco
+**[Validação visual](docs/visual-validation.md)** · `DESIGN DE REFERÊNCIA`
 
-### <img src="assets/icons/vision.svg" width="22" height="22" alt=""> Visão computacional
+Uma nota sobre entradas, critérios de decisão, casos difíceis e a fronteira entre a decisão automática e a revisão humana.
 
-Validação da correspondência entre imagem e descrição e reconhecimento visual, considerando qualidade, casos difíceis e limites das decisões automáticas.
+**[Da validação à integração](docs/ai-delivery.md)** · `NOTA SOBRE ENTREGA`
 
-### <img src="assets/icons/model.svg" width="22" height="22" alt=""> IA multimodal
+Uma estrutura prática para critérios de aceite, promoção entre ambientes, integração com aplicações e monitoramento operacional.
 
-Conexão entre imagens, contexto e respostas dos modelos para apoiar necessidades operacionais. Critérios de avaliação e dependências de integração explícitos.
+<details>
+<summary>Abordagem</summary>
 
-### <img src="assets/icons/delivery.svg" width="22" height="22" alt=""> Entrega técnica
+- **Começar pelo processo.** Definir a decisão operacional e as pessoas que dependem dela.
+- **Avaliar os casos difíceis.** Considerar variações de qualidade das imagens, contexto e condições reais de uso.
+- **Explicitar as escolhas.** Discutir qualidade, latência, custo e necessidade de revisão humana em conjunto.
+- **Documentar a decisão.** Manter premissas, dependências e critérios de aceite compreensíveis para o time.
 
-Alinhamento entre times técnicos e de negócio sobre requisitos, UAT, integração de aplicações, documentação e promoção entre ambientes.
+</details>
+
+## Tecnologias
 
 **Linguagens usadas nos meus projetos**
 
@@ -87,11 +102,10 @@ Alinhamento entre times técnicos e de negócio sobre requisitos, UAT, integraç
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/badge-pt-BR-5-dark.svg"><img src="assets/badge-pt-BR-5-light.svg" height="36" alt="PowerShell"></picture>
 </p>
 
-Python · JavaScript · TypeScript · SQL · Bash · PowerShell
-
 HTML5 e CSS3 complementam o desenvolvimento das interfaces. Bash e PowerShell aparecem em scripts de automação e implantação.
 
-### Tecnologias por área
+<details>
+<summary>Expandir frameworks, dados e infraestrutura</summary>
 
 | Área | Tecnologias |
 | --- | --- |
@@ -102,51 +116,18 @@ HTML5 e CSS3 complementam o desenvolvimento das interfaces. Bash e PowerShell ap
 | Cloud e plataforma | Azure OpenAI · Azure Blob Storage · Databricks |
 | Entrega e versionamento | Docker · Git · GitHub Actions · Azure DevOps |
 
-## Notas técnicas
-
-Uma pequena coleção de materiais de referência independentes, incluindo uma demonstração executável de avaliação. Os exemplos ilustram conceitos de engenharia com cenários sintéticos. A documentação técnica está em inglês.
-
-### <img src="assets/icons/evaluation.svg" width="22" height="22" alt=""> Laboratório de avaliação
-
-`DEMO EXECUTÁVEL`
-
-Avaliação conjunta da qualidade das decisões aceitas, cobertura e taxa de revisão humana. Inclui avaliador sem dependências, dados sintéticos e testes.
-
-[Explorar o laboratório →](examples/evaluation-lab/README.md)
-
-### <img src="assets/icons/vision.svg" width="22" height="22" alt=""> Validação visual
-
-`DESIGN DE REFERÊNCIA`
-
-Uma nota sobre entradas, critérios de decisão, casos difíceis e a fronteira entre a decisão automática e a revisão humana.
-
-[Ler a nota de design →](docs/visual-validation.md)
-
-### <img src="assets/icons/delivery.svg" width="22" height="22" alt=""> Da validação à integração
-
-`NOTA SOBRE ENTREGA`
-
-Uma estrutura prática para critérios de aceite, promoção entre ambientes, integração com aplicações e monitoramento operacional.
-
-[Ler a nota sobre entrega →](docs/ai-delivery.md)
-
-## Abordagem
-
-- **Começar pelo processo.** Definir a decisão operacional e as pessoas que dependem dela.
-- **Avaliar os casos difíceis.** Considerar variações de qualidade das imagens, contexto e condições reais de uso.
-- **Explicitar as escolhas.** Discutir qualidade, latência, custo e necessidade de revisão humana em conjunto.
-- **Documentar a decisão.** Manter premissas, dependências e critérios de aceite compreensíveis para o time.
+</details>
 
 ## Trajetória
 
 Comecei desenvolvendo para a web antes de me especializar em IA. Minha trajetória passa por manutenção industrial, projetos de energia solar, produção e automação, seguida pela pós-graduação em **Data Science & IA (2025)**. Hoje conecto essa experiência operacional e de software à entrega de IA corporativa.
 
-Meu interesse está nas perguntas práticas que tornam a IA útil: o que o sistema precisa decidir, como sabemos que funciona e como ele se encaixa na operação?
-
 ## Contato
+
+Para conversar sobre visão computacional, busca visual e engenharia de IA aplicada:
 
 [LinkedIn](https://linkedin.com/in/ruhampires)
 
 ---
 
-<sub>IA aplicada · Conhecimento operacional · Entrega técnica</sub>
+<sub>Visão computacional · Evidências claras · Entrega técnica</sub>

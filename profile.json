@@ -63,8 +63,8 @@
       "name": "LensPart",
       "group": "lens",
       "summary": {
-        "en": "Visual search for industrial components, with a focus on data sovereignty. As the owner of LensPart, I connect product direction with industrial maintenance needs. The documented platform includes visual identification, catalog deduplication, operational dashboards and deployment options for industrial environments.",
-        "pt-BR": "Busca visual de componentes industriais, com foco em soberania de dados. Como proprietário da LensPart, conecto a direção do produto às necessidades da manutenção industrial. A plataforma documentada inclui identificação visual, deduplicação de catálogos, painéis operacionais e opções de implantação para ambientes industriais."
+        "en": "Industrial visual search, catalog quality and data sovereignty. Owner-led product.",
+        "pt-BR": "Busca visual industrial, qualidade de catálogo e soberania de dados. Produto próprio."
       },
       "url": "https://github.com/RuhamPires/ruhampires/blob/main/docs/projects/lenspart.md"
     },
@@ -89,30 +89,32 @@
   ],
   "locales": {
     "en": {
-      "position": "Applied AI Engineer · Computer Vision · GenAI",
+      "position": "Computer Vision & Multimodal AI Engineer",
       "hero": [
-        "Applied intelligence.",
-        "Operational perspective."
+        "From pixels.",
+        "To decisions."
       ],
       "mobile_hero": [
         "Applied",
-        "intelligence."
+        "vision."
       ],
-      "hero_footer": "DATA & AI / EDENRED / BRAZIL",
+      "hero_footer": "COMPUTER VISION / APPLIED AI SYSTEMS",
       "navigation": [
-        "Professional work",
-        "Focus",
-        "Approach",
+        "Highlights",
+        "Portfolio",
+        "Engineering",
+        "Technology",
         "Connect"
       ],
       "nav_anchors": [
-        "professional-work",
-        "focus",
-        "approach",
+        "highlights",
+        "portfolio",
+        "engineering",
+        "technology",
         "connect"
       ],
-      "intro": "I work in Data & AI at **Edenred**, with responsibilities in technical leadership and the coordination of applied AI initiatives. My work connects computer vision, multimodal models and the integration of AI capabilities into business applications.",
-      "intro2": "Previously at **TK Elevator**, I developed SnapSupply from concept to deployment. My background in **industrial maintenance, production and automation** shapes how I approach AI: understand the process, define the decision and make the system useful in the field.",
+      "intro": "I work in **Data & AI at Edenred**, with technical leadership responsibilities in applied AI, and **own LensPart**. My specialty connects images, visual representations and applications that support operational decisions.",
+      "intro2": "At **TK Elevator**, I developed **SnapSupply from concept to deployment**. My earlier experience in industrial maintenance, production and automation connects AI engineering with the conditions systems face in the field.",
       "focus_title": "Focus",
       "areas": [
         {
@@ -140,8 +142,8 @@
         "Bash",
         "PowerShell"
       ],
-      "notes_title": "Engineering notes",
-      "notes_intro": "A small collection of independent reference material, including a runnable evaluation demo. These examples illustrate engineering concepts using synthetic scenarios.",
+      "notes_title": "Engineering",
+      "notes_intro": "Independent artifacts for inspecting the engineering approach. The runnable demo uses synthetic data; the notes are engineering references.",
       "notes": [
         {
           "icon": "evaluation",
@@ -190,9 +192,9 @@
       "background_title": "Background",
       "background": "I started building for the web before specializing in AI. My background spans industrial maintenance, solar energy projects, production and automation, followed by postgraduate training in **Data Science & AI (2025)**. Today I bring those operational and software perspectives to enterprise AI delivery.",
       "closing": "I am interested in the practical questions that make AI useful: what should the system decide, how do we know it works, and how does it fit into the operation?",
-      "footer": "Applied AI · Operational understanding · Technical delivery",
+      "footer": "Computer vision · Clear evidence · Engineering delivery",
       "contact_title": "Connect",
-      "projects_title": "Professional work",
+      "projects_title": "Portfolio",
       "stack_icons": [
         "model",
         "delivery",
@@ -202,7 +204,7 @@
         "delivery"
       ],
       "stack_context": "HTML5 and CSS3 support the interface layer. Bash and PowerShell appear in automation and deployment scripts.",
-      "technology_title": "Technology by area",
+      "technology_title": "Technology",
       "category_label": "Area",
       "technology_label": "Technologies",
       "technology_groups": [
@@ -230,33 +232,73 @@
           "Delivery & version control",
           "Docker · Git · GitHub Actions · Azure DevOps"
         ]
-      ]
+      ],
+      "signature": "Visual recognition · Similarity search · Operational AI",
+      "highlights_title": "Highlights",
+      "proof_headers": [
+        "Catalog scale",
+        "Operational reach",
+        "Multilingual delivery"
+      ],
+      "proof_values": [
+        "**228,844 SAP SKUs**",
+        "**12 sites · 3 continents**",
+        "**5 languages**"
+      ],
+      "proof_note": "SnapSupply scope previously reported in this public profile. [Context, contribution and evidence boundaries →](docs/projects/snapsupply.md)",
+      "spotlight_headers": [
+        "Selected work",
+        "What to examine"
+      ],
+      "spotlights": [
+        [
+          "[SnapSupply](docs/projects/snapsupply.md)",
+          "From field image to catalog retrieval; end-to-end development and industrial deployment."
+        ],
+        [
+          "[LensPart](docs/projects/lenspart.md)",
+          "An owned visual-search product connecting catalog quality with control over deployment and data."
+        ],
+        [
+          "[Evaluation lab](examples/evaluation-lab/README.md)",
+          "Runnable Python evaluator: quality, coverage and human review, with tests and synthetic inputs."
+        ]
+      ],
+      "portfolio_headers": [
+        "Project",
+        "Application"
+      ],
+      "review_link": "[Computer vision technical review guide →](docs/computer-vision-review.md)",
+      "more_tech": "Expand frameworks, data and infrastructure",
+      "contact_pitch": "For conversations about computer vision, visual search and applied AI engineering:"
     },
     "pt-BR": {
-      "position": "Engenharia de IA Aplicada · Visão Computacional · GenAI",
+      "position": "Engenheiro de Visão Computacional e IA Multimodal",
       "hero": [
-        "Inteligência aplicada.",
-        "Perspectiva operacional."
+        "Dos pixels.",
+        "À decisão."
       ],
       "mobile_hero": [
-        "Inteligência",
+        "Visão",
         "aplicada."
       ],
-      "hero_footer": "DATA & AI / EDENRED / BRASIL",
+      "hero_footer": "VISÃO COMPUTACIONAL / SISTEMAS DE IA",
       "navigation": [
-        "Projetos profissionais",
-        "Foco",
-        "Abordagem",
+        "Destaques",
+        "Portfólio",
+        "Engenharia",
+        "Tecnologias",
         "Contato"
       ],
       "nav_anchors": [
-        "projetos-profissionais",
-        "foco",
-        "abordagem",
+        "destaques",
+        "portfólio",
+        "engenharia",
+        "tecnologias",
         "contato"
       ],
-      "intro": "Atuo em Data & AI na **Edenred**, com responsabilidades de liderança técnica e articulação de iniciativas de IA aplicada. Meu trabalho conecta visão computacional, modelos multimodais e a integração de recursos de IA em aplicações de negócio.",
-      "intro2": "Anteriormente, na **TK Elevator**, desenvolvi o SnapSupply da concepção à implantação. Minha trajetória em **manutenção industrial, produção e automação** orienta minha abordagem de IA: compreender o processo, definir a decisão e tornar o sistema útil em campo.",
+      "intro": "Atuo em **Data & AI na Edenred**, com responsabilidades de liderança técnica em IA aplicada, e sou **proprietário da LensPart**. Minha especialidade conecta imagens, representações visuais e aplicações que apoiam decisões operacionais.",
+      "intro2": "Na **TK Elevator**, desenvolvi o **SnapSupply da concepção à implantação**. Minha experiência anterior em manutenção industrial, produção e automação me ajuda a conectar a engenharia de IA às condições reais de uso.",
       "focus_title": "Foco",
       "areas": [
         {
@@ -284,8 +326,8 @@
         "Bash",
         "PowerShell"
       ],
-      "notes_title": "Notas técnicas",
-      "notes_intro": "Uma pequena coleção de materiais de referência independentes, incluindo uma demonstração executável de avaliação. Os exemplos ilustram conceitos de engenharia com cenários sintéticos. A documentação técnica está em inglês.",
+      "notes_title": "Engenharia",
+      "notes_intro": "Materiais independentes para inspecionar a abordagem técnica. A demo usa dados sintéticos; as notas são referências de engenharia.",
       "notes": [
         {
           "icon": "evaluation",
@@ -334,9 +376,9 @@
       "background_title": "Trajetória",
       "background": "Comecei desenvolvendo para a web antes de me especializar em IA. Minha trajetória passa por manutenção industrial, projetos de energia solar, produção e automação, seguida pela pós-graduação em **Data Science & IA (2025)**. Hoje conecto essa experiência operacional e de software à entrega de IA corporativa.",
       "closing": "Meu interesse está nas perguntas práticas que tornam a IA útil: o que o sistema precisa decidir, como sabemos que funciona e como ele se encaixa na operação?",
-      "footer": "IA aplicada · Conhecimento operacional · Entrega técnica",
+      "footer": "Visão computacional · Evidências claras · Entrega técnica",
       "contact_title": "Contato",
-      "projects_title": "Projetos profissionais",
+      "projects_title": "Portfólio",
       "stack_icons": [
         "model",
         "delivery",
@@ -346,7 +388,7 @@
         "delivery"
       ],
       "stack_context": "HTML5 e CSS3 complementam o desenvolvimento das interfaces. Bash e PowerShell aparecem em scripts de automação e implantação.",
-      "technology_title": "Tecnologias por área",
+      "technology_title": "Tecnologias",
       "category_label": "Área",
       "technology_label": "Tecnologias",
       "technology_groups": [
@@ -374,7 +416,45 @@
           "Entrega e versionamento",
           "Docker · Git · GitHub Actions · Azure DevOps"
         ]
-      ]
+      ],
+      "signature": "Reconhecimento visual · Busca por similaridade · IA aplicada à operação",
+      "highlights_title": "Destaques",
+      "proof_headers": [
+        "Escala do catálogo",
+        "Alcance operacional",
+        "Experiência multilíngue"
+      ],
+      "proof_values": [
+        "**228.844 SKUs SAP**",
+        "**12 unidades · 3 continentes**",
+        "**5 idiomas**"
+      ],
+      "proof_note": "Escopo do SnapSupply registrado anteriormente no perfil público. [Contexto, contribuição e limites da evidência →](docs/projects/snapsupply.md)",
+      "spotlight_headers": [
+        "Trabalho em destaque",
+        "O que examinar"
+      ],
+      "spotlights": [
+        [
+          "[SnapSupply](docs/projects/snapsupply.md)",
+          "Da imagem de campo à busca no catálogo; desenvolvimento de ponta a ponta e implantação industrial."
+        ],
+        [
+          "[LensPart](docs/projects/lenspart.md)",
+          "Produto próprio de busca visual, qualidade de catálogo e implantação com controle dos dados."
+        ],
+        [
+          "[Evaluation lab](examples/evaluation-lab/README.md)",
+          "Avaliador Python executável: qualidade, cobertura e revisão humana, com testes e dados sintéticos."
+        ]
+      ],
+      "portfolio_headers": [
+        "Projeto",
+        "Aplicação"
+      ],
+      "review_link": "[Guia de revisão técnica de visão computacional →](docs/computer-vision-review.md)",
+      "more_tech": "Expandir frameworks, dados e infraestrutura",
+      "contact_pitch": "Para conversar sobre visão computacional, busca visual e engenharia de IA aplicada:"
     }
   },
   "project_groups": {

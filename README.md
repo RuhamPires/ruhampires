@@ -3,78 +3,93 @@
   <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/hero-en-dark-mobile.svg">
   <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/hero-en-light-mobile.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/hero-en-dark.svg">
-  <img src="assets/hero-en-light.svg" alt="Applied intelligence. Operational perspective." width="1200">
+  <img src="assets/hero-en-light.svg" alt="From pixels. To decisions." width="1200">
 </picture>
 
 # Ruham Pires
 
-**Applied AI Engineer · Computer Vision · GenAI**
+**Computer Vision & Multimodal AI Engineer**
+
+Visual recognition · Similarity search · Operational AI
 
 English · [Português](README.pt-BR.md)
 
-<p><a href="#professional-work">Professional work</a> &nbsp; / &nbsp; <a href="#focus">Focus</a> &nbsp; / &nbsp; <a href="#approach">Approach</a> &nbsp; / &nbsp; <a href="#connect">Connect</a></p>
+<p><a href="#highlights">Highlights</a> &nbsp; / &nbsp; <a href="#portfolio">Portfolio</a> &nbsp; / &nbsp; <a href="#engineering">Engineering</a> &nbsp; / &nbsp; <a href="#technology">Technology</a> &nbsp; / &nbsp; <a href="#connect">Connect</a></p>
 
-I work in Data & AI at **Edenred**, with responsibilities in technical leadership and the coordination of applied AI initiatives. My work connects computer vision, multimodal models and the integration of AI capabilities into business applications.
+I work in **Data & AI at Edenred**, with technical leadership responsibilities in applied AI, and **own LensPart**. My specialty connects images, visual representations and applications that support operational decisions.
 
-Previously at **TK Elevator**, I developed SnapSupply from concept to deployment. My background in **industrial maintenance, production and automation** shapes how I approach AI: understand the process, define the decision and make the system useful in the field.
+At **TK Elevator**, I developed **SnapSupply from concept to deployment**. My earlier experience in industrial maintenance, production and automation connects AI engineering with the conditions systems face in the field.
 
-## Professional work
+## Highlights
+
+| Catalog scale | Operational reach | Multilingual delivery |
+| --- | --- | --- |
+| **228,844 SAP SKUs** | **12 sites · 3 continents** | **5 languages** |
+
+SnapSupply scope previously reported in this public profile. [Context, contribution and evidence boundaries →](docs/projects/snapsupply.md)
+
+| Selected work | What to examine |
+| --- | --- |
+| [SnapSupply](docs/projects/snapsupply.md) | From field image to catalog retrieval; end-to-end development and industrial deployment. |
+| [LensPart](docs/projects/lenspart.md) | An owned visual-search product connecting catalog quality with control over deployment and data. |
+| [Evaluation lab](examples/evaluation-lab/README.md) | Runnable Python evaluator: quality, coverage and human review, with tests and synthetic inputs. |
+
+## Portfolio
+
 
 ### Edenred · Data & AI
 
-**Parts Number**
-
-AI-assisted extraction and standardization of automotive part numbers.
-
-**Parts Recognition**
-
-Visual validation of automotive parts against submitted photographs.
-
-**Smart Odometer**
-
-Computer vision for extracting vehicle mileage from dashboard photos.
+| Project | Application |
+| --- | --- |
+| **Parts Number** | AI-assisted extraction and standardization of automotive part numbers. |
+| **Parts Recognition** | Visual validation of automotive parts against submitted photographs. |
+| **Smart Odometer** | Computer vision for extracting vehicle mileage from dashboard photos. |
 
 ### TK Elevator · Industrial applications
 
-**[SnapSupply · AI Part Identification](https://github.com/RuhamPires/ruhampires/blob/main/docs/projects/snapsupply.md)**
-
-Computer vision and hybrid search for industrial spare parts. Developed end to end at TK Elevator, with a documented rollout across **12 sites, 3 continents and 5 languages**.
-
-**[SnapClean · Material Data Quality](https://github.com/RuhamPires/ruhampires/blob/main/docs/projects/snapclean.md)**
-
-Multilingual matching and human-in-the-loop validation for duplicate, incomplete and inconsistent SAP material records.
-
-**[SnapDispatch · Field Operations](https://github.com/RuhamPires/ruhampires/blob/main/docs/projects/snapdispatch.md)**
-
-Technician dispatch combining route optimization, operational scoring and a mobile field workflow.
+| Project | Application |
+| --- | --- |
+| **[SnapSupply · AI Part Identification](https://github.com/RuhamPires/ruhampires/blob/main/docs/projects/snapsupply.md)** | Computer vision and hybrid search for industrial spare parts. Developed end to end at TK Elevator, with a documented rollout across **12 sites, 3 continents and 5 languages**. |
+| **[SnapClean · Material Data Quality](https://github.com/RuhamPires/ruhampires/blob/main/docs/projects/snapclean.md)** | Multilingual matching and human-in-the-loop validation for duplicate, incomplete and inconsistent SAP material records. |
+| **[SnapDispatch · Field Operations](https://github.com/RuhamPires/ruhampires/blob/main/docs/projects/snapdispatch.md)** | Technician dispatch combining route optimization, operational scoring and a mobile field workflow. |
 
 ### Lens · Independent products & demos
 
-**[LensPart](https://github.com/RuhamPires/ruhampires/blob/main/docs/projects/lenspart.md)**
+| Project | Application |
+| --- | --- |
+| **[LensPart](https://github.com/RuhamPires/ruhampires/blob/main/docs/projects/lenspart.md)** | Industrial visual search, catalog quality and data sovereignty. Owner-led product. |
+| **[Lens Indústria · Industrial Safety](https://lens-industria.ruhampires.chatgpt.site)** | Interactive 3D factory demonstration exploring computer vision and PPE identification for industrial safety. |
+| **[Lens JiuJitsu · Sports Video Analysis](https://lens-jiujitsu.ruhampires.chatgpt.site)** | Interactive 3D mat and Jiu-Jitsu video analysis with positions, a timeline and support for reviewing scoring. |
 
-Visual search for industrial components, with a focus on data sovereignty. As the owner of LensPart, I connect product direction with industrial maintenance needs. The documented platform includes visual identification, catalog deduplication, operational dashboards and deployment options for industrial environments.
+## Engineering
 
-**[Lens Indústria · Industrial Safety](https://lens-industria.ruhampires.chatgpt.site)**
+Independent artifacts for inspecting the engineering approach. The runnable demo uses synthetic data; the notes are engineering references.
 
-Interactive 3D factory demonstration exploring computer vision and PPE identification for industrial safety.
+[Computer vision technical review guide →](docs/computer-vision-review.md)
 
-**[Lens JiuJitsu · Sports Video Analysis](https://lens-jiujitsu.ruhampires.chatgpt.site)**
+**[Evaluation lab](examples/evaluation-lab/README.md)** · `RUNNABLE DEMO`
 
-Interactive 3D mat and Jiu-Jitsu video analysis with positions, a timeline and support for reviewing scoring.
+Measure accepted-decision quality, coverage and human-review rate together. Includes a zero-dependency evaluator, synthetic fixtures and tests.
 
-## Focus
+**[Visual validation](docs/visual-validation.md)** · `REFERENCE DESIGN`
 
-### <img src="assets/icons/vision.svg" width="22" height="22" alt=""> Computer vision
+A compact design note on inputs, decision thresholds, difficult examples and the boundary between an automated decision and human review.
 
-Image-to-description validation and visual recognition, with attention to image quality, difficult examples and the limits of automated decisions.
+**[From validation to integration](docs/ai-delivery.md)** · `DELIVERY NOTE`
 
-### <img src="assets/icons/model.svg" width="22" height="22" alt=""> Multimodal AI
+A practical outline for acceptance criteria, environment promotion, application integration and meaningful operational monitoring.
 
-Connecting images, context and model outputs to operational needs. Making evaluation criteria and integration dependencies explicit.
+<details>
+<summary>Approach</summary>
 
-### <img src="assets/icons/delivery.svg" width="22" height="22" alt=""> Technical delivery
+- **Start with the process.** Define the operational decision and the people who depend on it.
+- **Evaluate difficult cases.** Consider variation in image quality, context and real usage conditions.
+- **Make trade-offs explicit.** Discuss quality, latency, cost and the need for human review together.
+- **Document the decision.** Keep assumptions, dependencies and acceptance criteria understandable to the team.
 
-Aligning technical and business teams around requirements, UAT, application integration, documentation and environment promotion.
+</details>
+
+## Technology
 
 **Languages used across my projects**
 
@@ -87,11 +102,10 @@ Aligning technical and business teams around requirements, UAT, application inte
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/badge-en-5-dark.svg"><img src="assets/badge-en-5-light.svg" height="36" alt="PowerShell"></picture>
 </p>
 
-Python · JavaScript · TypeScript · SQL · Bash · PowerShell
-
 HTML5 and CSS3 support the interface layer. Bash and PowerShell appear in automation and deployment scripts.
 
-### Technology by area
+<details>
+<summary>Expand frameworks, data and infrastructure</summary>
 
 | Area | Technologies |
 | --- | --- |
@@ -102,51 +116,18 @@ HTML5 and CSS3 support the interface layer. Bash and PowerShell appear in automa
 | Cloud & platform | Azure OpenAI · Azure Blob Storage · Databricks |
 | Delivery & version control | Docker · Git · GitHub Actions · Azure DevOps |
 
-## Engineering notes
-
-A small collection of independent reference material, including a runnable evaluation demo. These examples illustrate engineering concepts using synthetic scenarios.
-
-### <img src="assets/icons/evaluation.svg" width="22" height="22" alt=""> Evaluation lab
-
-`RUNNABLE DEMO`
-
-Measure accepted-decision quality, coverage and human-review rate together. Includes a zero-dependency evaluator, synthetic fixtures and tests.
-
-[Explore the lab →](examples/evaluation-lab/README.md)
-
-### <img src="assets/icons/vision.svg" width="22" height="22" alt=""> Visual validation
-
-`REFERENCE DESIGN`
-
-A compact design note on inputs, decision thresholds, difficult examples and the boundary between an automated decision and human review.
-
-[Read the design note →](docs/visual-validation.md)
-
-### <img src="assets/icons/delivery.svg" width="22" height="22" alt=""> From validation to integration
-
-`DELIVERY NOTE`
-
-A practical outline for acceptance criteria, environment promotion, application integration and meaningful operational monitoring.
-
-[Read the delivery note →](docs/ai-delivery.md)
-
-## Approach
-
-- **Start with the process.** Define the operational decision and the people who depend on it.
-- **Evaluate difficult cases.** Consider variation in image quality, context and real usage conditions.
-- **Make trade-offs explicit.** Discuss quality, latency, cost and the need for human review together.
-- **Document the decision.** Keep assumptions, dependencies and acceptance criteria understandable to the team.
+</details>
 
 ## Background
 
 I started building for the web before specializing in AI. My background spans industrial maintenance, solar energy projects, production and automation, followed by postgraduate training in **Data Science & AI (2025)**. Today I bring those operational and software perspectives to enterprise AI delivery.
 
-I am interested in the practical questions that make AI useful: what should the system decide, how do we know it works, and how does it fit into the operation?
-
 ## Connect
+
+For conversations about computer vision, visual search and applied AI engineering:
 
 [LinkedIn](https://linkedin.com/in/ruhampires)
 
 ---
 
-<sub>Applied AI · Operational understanding · Technical delivery</sub>
+<sub>Computer vision · Clear evidence · Engineering delivery</sub>

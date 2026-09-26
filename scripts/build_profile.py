@@ -6,6 +6,7 @@ Python 3.10+, standard library only. No network access or credentials required.
 import argparse
 import html
 import json
+import math
 import re
 import sys
 from pathlib import Path
@@ -43,28 +44,38 @@ def hero(locale, copy, theme, mobile=False):
     for y in range(24, height, 44):
         lines.append(f'<path d="M0 {y}H{width}"/>')
     grid = f'<g stroke="{p["line"]}" stroke-width=".7" opacity=".22">{"".join(lines)}</g>'
-    x, y, scale = (555, 190, .68) if mobile else (970, 210, .88)
-    def cube(cx, cy, radius, depth):
-        top = f"{cx},{cy-radius/2} {cx+radius},{cy} {cx},{cy+radius/2} {cx-radius},{cy}"
-        left = f"{cx-radius},{cy} {cx},{cy+radius/2} {cx},{cy+radius/2+depth} {cx-radius},{cy+depth}"
-        right = f"{cx},{cy+radius/2} {cx+radius},{cy} {cx+radius},{cy+depth} {cx},{cy+radius/2+depth}"
-        return f'<polygon points="{left}" fill="url(#side)"/><polygon points="{right}" fill="{p["soft"]}"/><polygon points="{top}" fill="url(#top)"/><g fill="none" stroke="{p["accent"]}" stroke-opacity=".65" stroke-width="1.2"><polygon points="{top}"/><path d="M{cx-radius} {cy}v{depth}l{radius} {radius/2} {radius} {-radius/2}v{-depth}M{cx} {cy+radius/2}v{depth}"/></g>'
-    cubes = cube(0, 40, 134, 22) + cube(0, -5, 104, 25) + cube(0, -67, 59, 75)
-    cubes += cube(-112, -80, 24, 29) + cube(110, -20, 22, 30) + cube(82, 88, 17, 19)
-    diagram = f'''<defs>
-      <linearGradient id="top" x2="1" y2="1"><stop stop-color="{p['accent']}" stop-opacity=".85"/><stop offset="1" stop-color="{p['panel']}"/></linearGradient>
-      <linearGradient id="side" x2="1" y2="1"><stop stop-color="{p['panel']}"/><stop offset="1" stop-color="{p['bg']}"/></linearGradient>
-      <radialGradient id="halo"><stop stop-color="{p['accent']}" stop-opacity=".18"/><stop offset="1" stop-color="{p['bg']}" stop-opacity="0"/></radialGradient>
-      </defs><g transform="translate({x} {y}) scale({scale})">
-      <circle r="195" fill="url(#halo)"/>
-      <ellipse cy="117" rx="154" ry="33" fill="{p['bg']}" opacity=".6"/>
-      <ellipse rx="180" ry="76" fill="none" stroke="{p['line']}" transform="rotate(-28)"/>
-      <ellipse rx="179" ry="76" fill="none" stroke="{p['accent']}" stroke-opacity=".35" stroke-dasharray="3 9" transform="rotate(28)"/>
-      {cubes}
-      <path d="M-112-50v26l53 27M110 10v21l-46 25" fill="none" stroke="{p['accent']}" stroke-width="2"/>
-      <g transform="translate(-16 -92)">{svg_icon('model',p['text'])}</g>
-      <circle cx="-166" cy="-53" r="5" fill="{p['accent']}"/>
-      <circle cx="163" cy="61" r="4" fill="{p['accent']}"/>
+    x, y, scale = (555, 190, .68) if mobile else (970, 173, .78)
+    # Project a toroidal industrial component; SVG is self-contained and script-free.
+    def point(u, v):
+        radius = 94 + 28 * math.cos(v)
+        px, py, pz = radius * math.cos(u), radius * math.sin(u), 28 * math.sin(v)
+        return px * .866 - py * .5, px * .25 + py * .433 - pz * .866
+    mesh = []
+    for j in range(10):
+        for i in range(32):
+            vertices = [point(u*2*math.pi/32, v*2*math.pi/10) for u,v in [(i,j),(i+1,j),(i+1,j+1),(i,j+1)]]
+            pts = ' '.join(f'{a:.2f},{b:.2f}' for a,b in vertices)
+            shade = .12 + .5 * (1 + math.cos(j*2*math.pi/10)) / 2
+            u, v = (i+.5)*2*math.pi/32, (j+.5)*2*math.pi/10
+            r = 94 + 28*math.cos(v)
+            depth = r*math.cos(u)*.433 + r*math.sin(u)*.75 + 28*math.sin(v)*.5
+            base = tuple(int(p['panel'][k:k+2],16) for k in (1,3,5))
+            accent = tuple(int(p['accent'][k:k+2],16) for k in (1,3,5))
+            color = '#' + ''.join(f'{round(b*(1-shade)+a*shade):02x}' for b,a in zip(base,accent))
+            mesh.append((depth, f'<polygon points="{pts}" fill="{color}" stroke="{p["accent"]}" stroke-opacity=".3" stroke-width=".45"/>'))
+
+    surface = ''.join(poly for _,poly in sorted(mesh))
+    landmarks = ''.join(f'<circle cx="{point(i*math.pi/4,0)[0]:.2f}" cy="{point(i*math.pi/4,0)[1]:.2f}" r="3.5" fill="{p["text"]}"/>' for i in range(8))
+    diagram = f'''<defs><radialGradient id="halo"><stop stop-color="{p['accent']}" stop-opacity=".2"/><stop offset="1" stop-color="{p['bg']}" stop-opacity="0"/></radialGradient></defs>
+    <g transform="translate({x} {y-15}) scale({scale})">
+      <circle r="200" fill="url(#halo)"/>
+      <ellipse cy="110" rx="140" ry="28" fill="{p['bg']}" opacity=".65"/>
+      <path d="M-158 62 0 140 158 62 0-16Z" fill="{p['soft']}" fill-opacity=".35" stroke="{p['line']}"/>
+      <path d="M-158 80 0 158 158 80M-158 98 0 176 158 98" fill="none" stroke="{p['line']}"/>
+      {surface}{landmarks}
+      <g fill="none" stroke="{p['accent']}" stroke-width="2"><path d="M-151-85v-18h27M124-103h27v18M151 76v18h-27M-124 94h-27V76"/></g>
+      <path d="M-130 17H130" stroke="{p['accent']}" stroke-opacity=".5" stroke-dasharray="4 6"/>
+      <g font-family="monospace" font-size="11" fill="{p['muted']}"><text x="-150" y="-126">VISUAL REPRESENTATION</text><text x="-150" y="203">RETRIEVE / EVALUATE / DEPLOY</text></g>
     </g>'''
     if mobile:
         title = f'<text x="38" y="168" font-size="62" font-weight="700">{esc(copy["mobile_hero"][0])}</text><text x="38" y="240" font-size="62" font-weight="700">{esc(copy["mobile_hero"][1])}</text><text x="40" y="303" font-size="27" fill="{p["accent"]}">{esc(copy["hero"][1])}</text>'
@@ -72,14 +83,14 @@ def hero(locale, copy, theme, mobile=False):
         footer = f'<text x="40" y="{footer_y}" font-family="monospace" font-size="17" fill="{p["muted"]}">{esc(copy["hero_footer"])}</text>'
         rule = f'<path d="M40 390H720" stroke="{p["line"]}"/>'
     else:
-        size = 55 if locale == "en" else 51
+        size = 76 if locale == "en" else 70
         title = f'<text x="52" y="178" font-size="{size}" font-weight="700">{esc(copy["hero"][0])}</text><text x="52" y="246" font-size="{size}" font-weight="700" fill="{p["accent"]}">{esc(copy["hero"][1])}</text>'
         eyebrow_y, footer_y = 69, 367
         footer = f'<text x="52" y="{footer_y}" font-family="monospace" font-size="14" letter-spacing="1.6" fill="{p["muted"]}">{esc(copy["hero_footer"])}</text><text x="1128" y="367" text-anchor="end" font-family="monospace" font-size="12" fill="{p["muted"]}">VISION / MODELS / SYSTEMS</text>'
         rule = f'<path d="M52 324H1148" stroke="{p["line"]}"/>'
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">
-<title id="title">Ruham Pires — {esc(copy['position'])}</title><desc id="desc">{esc(' '.join(copy['hero']))} Original isometric 3D illustration of an AI computing core and connected systems.</desc>
-<rect width="{width}" height="{height}" rx="16" fill="{p['bg']}"/>{grid}{diagram}<g font-family="Arial, Helvetica, sans-serif" fill="{p['text']}"><text x="{40 if mobile else 52}" y="{eyebrow_y}" font-size="{20 if mobile else 17}" letter-spacing="3" fill="{p['muted']}">RUHAM PIRES / DATA &amp; AI</text>{title}{footer}</g>{rule}
+<title id="title">Ruham Pires — {esc(copy['position'])}</title><desc id="desc">{esc(' '.join(copy['hero']))} Original projected 3D industrial component with visual landmarks. Decorative illustration, not a model output.</desc>
+<rect width="{width}" height="{height}" rx="16" fill="{p['bg']}"/>{grid}{diagram}<g font-family="Arial, Helvetica, sans-serif" fill="{p['text']}"><text x="{40 if mobile else 52}" y="{eyebrow_y}" font-size="{20 if mobile else 17}" letter-spacing="3" fill="{p['muted']}">RUHAM PIRES / COMPUTER VISION</text>{title}{footer}</g>{rule}
 <rect x=".5" y=".5" width="{width-1}" height="{height-1}" rx="16" fill="none" stroke="{p['line']}"/></svg>\n'''
 
 
@@ -106,41 +117,33 @@ def markdown(data, locale):
     c = data['locales'][locale]
     other = 'README.pt-BR.md' if locale == 'en' else 'README.md'
     language = f'English · [Português]({other})' if locale == 'en' else f'[English]({other}) · Português'
-    nav = ' &nbsp; / &nbsp; '.join(f'<a href="#{a}">{esc(t)}</a>' for t, a in zip(c['navigation'], c['nav_anchors']))
-    out = ['<!-- Generated by scripts/build_profile.py. Edit profile.json. -->', picture(locale, ' '.join(c['hero'])), '', f'# {data["name"]}', '', f'**{c["position"]}**', '', language, '', f'<p>{nav}</p>', '', c['intro'], '', c['intro2'], '']
-    if data['selected_projects']:
-        out += [f'## {c["projects_title"]}', '']
-        current_group = None
-        for project in data['selected_projects']:
-            group = project.get('group')
-            if group != current_group:
-                current_group = group
-                out += [f'### {data["project_groups"][group][locale]}', '']
-            title = f'[{project["name"]}]({project["url"]})' if project.get('url') else project['name']
-            out += [f'**{title}**', '']
-            if project['summary'][locale]:
-                out += [project['summary'][locale], '']
-    out += [f'## {c["focus_title"]}', '']
-    for a in c['areas']:
-        out += [f'### <img src="assets/icons/{a["icon"]}.svg" width="22" height="22" alt=""> {a["title"]}', '', a['text'], '']
-    out += [f'**{c["stack_title"]}**', '', '<p>']
-    for i, label in enumerate(c['stack']):
-        out += [f'<picture><source media="(prefers-color-scheme: dark)" srcset="assets/badge-{locale}-{i}-dark.svg"><img src="assets/badge-{locale}-{i}-light.svg" height="36" alt="{esc(label)}"></picture>']
-    out += ['</p>', '', ' · '.join(c['stack']), '']
-    out += [c['stack_context'], '', f'### {c["technology_title"]}', '', f'| {c["category_label"]} | {c["technology_label"]} |', '| --- | --- |']
-    for category, technologies in c['technology_groups']:
-        out += [f'| {category} | {technologies} |']
-    out += ['']
-    out += [f'## {c["notes_title"]}', '', c['notes_intro'], '']
+    nav = ' &nbsp; / &nbsp; '.join(f'<a href="#{a}">{esc(t)}</a>' for t,a in zip(c['navigation'],c['nav_anchors']))
+    out = ['<!-- Generated by scripts/build_profile.py. Edit profile.json. -->',picture(locale,' '.join(c['hero'])),'',f'# {data["name"]}','',f'**{c["position"]}**','',c['signature'],'',language,'',f'<p>{nav}</p>','',c['intro'],'',c['intro2'],'']
+    out += [f'## {c["highlights_title"]}','','| '+' | '.join(c['proof_headers'])+' |','| --- | --- | --- |','| '+' | '.join(c['proof_values'])+' |','',c['proof_note'],'']
+    out += ['| '+' | '.join(c['spotlight_headers'])+' |','| --- | --- |']
+    out += ['| '+' | '.join(row)+' |' for row in c['spotlights']]
+    out += ['',f'## {c["projects_title"]}','']
+    current_group = None
+    for project in data['selected_projects']:
+        group = project['group']
+        if group != current_group:
+            current_group = group
+            out += ['',f'### {data["project_groups"][group][locale]}','','| '+' | '.join(c['portfolio_headers'])+' |','| --- | --- |']
+        title = f'[{project["name"]}]({project["url"]})' if project.get('url') else project['name']
+        out += [f'| **{title}** | {project["summary"][locale]} |']
+    out += ['',f'## {c["notes_title"]}','',c['notes_intro'],'',c['review_link'],'']
     for n in c['notes']:
-        out += [f'### <img src="assets/icons/{n["icon"]}.svg" width="22" height="22" alt=""> {n["title"]}', '', f'`{n["label"]}`', '', n['text'], '', f'[{n["cta"]} →]({n["path"]})', '']
-    out += [f'## {c["approach_title"]}', '']
-    for title, text in c['principles']:
+        out += [f'**[{n["title"]}]({n["path"]})** · `{n["label"]}`','',n['text'],'']
+    out += ['<details>',f'<summary>{esc(c["approach_title"])}</summary>','']
+    for title,text in c['principles']:
         out += [f'- **{title}** {text}']
-    out += ['', f'## {c["background_title"]}', '', c['background'], '', c['closing'], '']
-    if data['contact']:
-        out += [f'## {c["contact_title"]}', '', ' · '.join(f'[{x["label"]}]({x["url"]})' for x in data['contact']), '']
-    out += ['---', '', f'<sub>{c["footer"]}</sub>', '']
+    out += ['','</details>','',f'## {c["technology_title"]}','',f'**{c["stack_title"]}**','','<p>']
+    for i,label in enumerate(c['stack']):
+        out += [f'<picture><source media="(prefers-color-scheme: dark)" srcset="assets/badge-{locale}-{i}-dark.svg"><img src="assets/badge-{locale}-{i}-light.svg" height="36" alt="{esc(label)}"></picture>']
+    out += ['</p>','',c['stack_context'],'','<details>',f'<summary>{esc(c["more_tech"])}</summary>','',f'| {c["category_label"]} | {c["technology_label"]} |','| --- | --- |']
+    for category,technologies in c['technology_groups']:
+        out += [f'| {category} | {technologies} |']
+    out += ['','</details>','',f'## {c["background_title"]}','',c['background'],'',f'## {c["contact_title"]}','',c['contact_pitch'],'',' · '.join(f'[{x["label"]}]({x["url"]})' for x in data['contact']),'','---','',f'<sub>{c["footer"]}</sub>','']
     return '\n'.join(out)
 
 
